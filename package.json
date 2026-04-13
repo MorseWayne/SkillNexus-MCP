@@ -1,6 +1,6 @@
 {
   "name": "skill-nexus-mcp",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Unified skill adapter for Zed built on MCP, aggregating skills from Gemini, Claude, and OpenCode.",
   "main": "dist/index.js",
   "bin": {

@@ -25,7 +25,7 @@ interface SkillSource {
   path: string;
 }
 
-const DEFAULT_SERVER_VERSION = "1.0.2";
+const DEFAULT_SERVER_VERSION = "1.0.3";
 const SKILL_TOOL_PREFIX = "activate_skill_";
 
 function resolveServerVersion(): string {

@@ -15,25 +15,23 @@
 ## Quick Start 🛠️
 
 ### 1. Configure in Zed
-You don't even need to clone this repository. Just open your Zed `settings.json` and add the following to `context_graph.mcp.servers`:
+You don't even need to clone this repository. Just open your Zed `settings.json` and add the following under `context_servers`:
 
 ```json
 {
-  "context_graph": {
-    "mcp": {
-      "servers": {
-        "skill-nexus": {
-          "command": "npx",
-          "args": [
-            "-y",
-            "skill-nexus-mcp"
-          ]
-        }
-      }
+  "context_servers": {
+    "skill-nexus": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "skill-nexus-mcp"
+      ]
     }
   }
 }
 ```
+
+Reference: [Zed MCP docs](https://zed.dev/docs/ai/mcp#installing-mcp-servers)
 
 ### 2. Manual Installation (Optional)
 If you prefer to install it globally:

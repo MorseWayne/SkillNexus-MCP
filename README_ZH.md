@@ -15,25 +15,23 @@
 ## 快速开始 🛠️
 
 ### 1. 在 Zed 中配置
-您甚至不需要克隆本仓库。直接打开您的 Zed `settings.json`，在 `context_graph.mcp.servers` 中添加：
+您甚至不需要克隆本仓库。直接打开您的 Zed `settings.json`，在 `context_servers` 中添加：
 
 ```json
 {
-  "context_graph": {
-    "mcp": {
-      "servers": {
-        "skill-nexus": {
-          "command": "npx",
-          "args": [
-            "-y",
-            "skill-nexus-mcp"
-          ]
-        }
-      }
+  "context_servers": {
+    "skill-nexus": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "skill-nexus-mcp"
+      ]
     }
   }
 }
 ```
+
+参考文档：[Zed MCP 官方文档](https://zed.dev/docs/ai/mcp#installing-mcp-servers)
 
 ### 2. 全局安装 (可选)
 如果您希望本地全局安装：
