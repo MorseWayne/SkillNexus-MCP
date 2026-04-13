@@ -14,14 +14,8 @@
 
 ## Quick Start 🛠️
 
-### 1. Install Dependencies
-Ensure you have Node.js 18+ installed. Run the following in the project directory:
-```bash
-npm install
-```
-
-### 2. Configure in Zed
-Open your Zed `settings.json` and add the following to `context_graph.mcp.servers`:
+### 1. Configure in Zed
+You don't even need to clone this repository. Just open your Zed `settings.json` and add the following to `context_graph.mcp.servers`:
 
 ```json
 {
@@ -32,14 +26,19 @@ Open your Zed `settings.json` and add the following to `context_graph.mcp.server
           "command": "npx",
           "args": [
             "-y",
-            "tsx",
-            "/absolute/path/to/your/project/index.ts"
+            "skill-nexus-mcp"
           ]
         }
       }
     }
   }
 }
+```
+
+### 2. Manual Installation (Optional)
+If you prefer to install it globally:
+```bash
+npm install -g skill-nexus-mcp
 ```
 
 ## Usage 💡
