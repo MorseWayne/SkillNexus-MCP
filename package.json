@@ -1,8 +1,25 @@
 {
   "name": "skill-nexus-mcp",
   "version": "1.0.0",
-  "description": "",
+  "description": "Unified skill adapter for Zed built on MCP, aggregating skills from Gemini, Claude, and OpenCode.",
   "main": "index.js",
+  "bin": {
+    "skill-nexus": "./index.js"
+  },
+  "files": [
+    "index.ts",
+    "index.js",
+    "README.md",
+    "README_ZH.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MorseWayne/SkillNexus-MCP.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
