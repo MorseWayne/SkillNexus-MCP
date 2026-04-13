@@ -15,9 +15,10 @@ jobs:
           node-version: '20'
           registry-url: 'https://registry.npmjs.org'
       
-      - run: npm install
-      
-      # 初次发布，使用最基础的命令以确保成功创建包
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm test
+      - run: npm run build
       - run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
